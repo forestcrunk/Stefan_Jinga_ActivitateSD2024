@@ -19,7 +19,7 @@ struct Sejur {
 struct Sejur initializareSejur(const char* destinatie, float pret, int nrBileteVandute) {
 	struct Sejur s;
 
-	s.destinatie = malloc(sizeof(destinatie) + 1);
+	s.destinatie = malloc(strlen(destinatie) + 1);
 	strcpy(s.destinatie, destinatie);
 
 	s.pret = pret;
@@ -69,4 +69,6 @@ int main() {
 	afisareSejur(sejur1);
 
 	stergeSejur(&sejur1);
+
+	return 0;
 }
