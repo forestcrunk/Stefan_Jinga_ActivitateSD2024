@@ -76,7 +76,7 @@ int main() {
 		printf("Producator: %s\n", vec_m[i].producator);
 		printf("Nr usi: %d\n", vec_m[i].nrUsi);
 		printf("Pret: %6.2f\n", vec_m[i].pret);
-		printf("\n");
+		printf("\n"); // '\n' in loc de "\n" nu functioneaza
 	}
 
 	return 0;
