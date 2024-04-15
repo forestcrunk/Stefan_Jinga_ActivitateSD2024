@@ -34,7 +34,7 @@ HashTable initializareHashTable(int dimensiune) {
 
 	HashTable hash;
 	hash.dim = dimensiune;
-	hash.vector = (nod*)malloc(sizeof(nod) * dimensiune);
+	hash.vector = (nod**)malloc(sizeof(nod*) * dimensiune);
 
 	for (int i = 0; i < dimensiune; i++) {
 		hash.vector[i] = NULL;
